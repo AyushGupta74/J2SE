@@ -1,0 +1,26 @@
+//write a menudriven java program to display following menu and 
+//do  accordingly
+1. print table
+2. prime number
+3. display pattern
+
+if user selects 1, then accept a number from user and display table
+as follows
+ 5 * 1= 5
+ 5 * 2= 10
+
+ 5 * 10 = 50
+if user selects 2 then accept a number from use 
+and check whether  the number is prime, if yes then 
+display message, the number is prime, else dispaly number 
+is not prime
+if user selects 3 then accept a odd numberto print the number 
+of of lines from user,
+and display following pattern
+    *
+   ***
+  *****
+ *******
+  *****
+   ***
+    *
