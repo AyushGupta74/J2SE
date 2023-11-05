@@ -13,8 +13,8 @@ public class TestArrayList {
 		EmployeeService eservice=new EmployeeServiceImpl();
 		int choice=0;
 		do {
-		System.out.println("1. Add new Employee\n2. delete employee by id\n 3. modify salary\n");
-		System.out.println("4. Display all\n5. display by id\n 6. sort by salary\n7. sort by name\n8.exit\n choice: ");
+		System.out.println("1. Add new Employee\n2. Delete employee by id\n 3. Modify salary\n");
+		System.out.println("4. Display all\n5. Display by id\n 6. Sort by salary\n7. Sort by name\n8.Exit\n Choice: ");
 		choice=sc.nextInt();
 		switch(choice) {
 		case 1:
@@ -23,27 +23,27 @@ public class TestArrayList {
 			eservice.addnewEmployee(ch);
 			break;
 		case 2:
-			System.out.println("enetr id for delete");
+			System.out.println("Enter ID for delete");
 			int id=sc.nextInt();
 			boolean status=eservice.deleteById(id);
 			if(status) {
-				System.out.println("deleted successfully");
+				System.out.println("Deleted successfully");
 			}
 			else {
 				System.out.println("not found");
 			}
 			break;
 		case 3:
-			System.out.println("enetr id for delete");
+			System.out.println("Enter ID for delete");
 			id=sc.nextInt();
-			System.out.println("enter salary");
+			System.out.println("Enter salary");
 			double sal=sc.nextDouble();
 			status=eservice.modifySalById(id,sal);
 			if(status) {
-				System.out.println("modified successfully");
+				System.out.println("Modified successfully");
 			}
 			else {
-				System.out.println("not found");
+				System.out.println("Not found");
 			}
 			break;
 		case 4:
@@ -53,14 +53,14 @@ public class TestArrayList {
 			}
 			break;
 		case 5:
-			System.out.println("enetr id for search");
+			System.out.println("Enter ID for search");
 			 id=sc.nextInt();
 			Employee e=eservice.displayById(id);
 			if(e!=null) {
 				System.out.println(e);
 			}
 			else {
-				System.out.println("not found");
+				System.out.println("Not found");
 			}
 			break;
 		case 6:
@@ -74,7 +74,7 @@ public class TestArrayList {
 			System.out.println("Thank you for visiting....");
 			break;
 		default:
-			System.out.println("wrong choice");
+			System.out.println("Wrong choice!");
 		}
 		}while(choice!=8);
 	}
